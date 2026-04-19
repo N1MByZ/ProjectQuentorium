@@ -66,14 +66,11 @@ body {
     backdrop-filter: blur(2px);
     border-radius: 36px;
     box-shadow: 0 12px 24px -12px rgba(0, 64, 77, 0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
     border: 1px solid rgba(255, 245, 180, 0.8);
     overflow: hidden;
 }
 
 .questionTest:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 22px 30px -14px rgba(0, 84, 102, 0.3);
     background: #ffffff;
 }
 
@@ -255,8 +252,6 @@ questionRatio {
 }
 
 .questionRatio:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 22px 30px -14px rgba(0, 84, 102, 0.3);
     background: #ffffff;
 }
 
@@ -364,7 +359,7 @@ questionRatio {
 }
 
 .anwserRatio:empty::before {
-    content: "✨ Перетащите ответы к соответствующим вариантам";
+    content: "✨ Соедините ответы к соответствующим вариантам";
     opacity: 0.7;
     font-style: italic;
 }
@@ -383,7 +378,6 @@ questionRatio {
 
 .questionWrite:hover {
     background: #ffffff;
-    box-shadow: 0 20px 28px -14px rgba(0, 84, 102, 0.25);
 }
 
 .qestionText {
@@ -453,10 +447,10 @@ questionRatio {
 }
 
 
-.readyBtn {
-    background: linear-gradient(105deg, #fde047, #facc15);
-    width: 220px;
-    margin: 30px auto 20px auto;
+.readyBtn button{
+    background: #fde047;
+    width: 190px;
+    margin: 30px 400px 20px;
     text-align: center;
     padding: 14px 18px;
     border-radius: 60px;
@@ -470,12 +464,6 @@ questionRatio {
     letter-spacing: 1px;
 }
 
-.readyBtn:hover {
-    background: #facc15;
-    transform: scale(1.02);
-    box-shadow: 0 12px 20px -10px rgba(0,0,0,0.25);
-    color: #0b3b48;
-}
 
 .readyBtn:active {
     transform: scale(0.98);
@@ -554,10 +542,10 @@ questionRatio {
     color: #b45337;
 }
 
-.againBtn {
+.againBtn button {
     background: #0f5c72;
-    width: 200px;
-    margin: 10px auto 0;
+    width: 190px;
+    margin: 30px 350px 20px;
     text-align: center;
     padding: 12px 18px;
     border-radius: 40px;
@@ -569,14 +557,9 @@ questionRatio {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.againBtn:hover {
-    background: #1e7f96;
-    transform: scale(0.97);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
 
 .againBtn:active {
-    background: #094c5e;
+    transform: scale(0.98);
 }
 
 
